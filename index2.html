@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto sobre Imagen</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px; /* Ajusta el ancho según tu imagen */
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/coffee_image.svg" alt="Imagen" class="image">
+        <div class="text">Texto sobre la imagen</div>
+    </div>
+</body>
+</html>
