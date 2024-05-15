@@ -238,4 +238,63 @@ h4 {
    
 }
 
+/**************************************************/
+.cafe {
+    position: relative;
+}
+
+.cafe::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color:rgba(232, 183, 128, 0.5); 
+  }
+
+.div-cafe {
+    text-align: left;
+    z-index: 1;
+}
+
+.BackgroundImage {
+    background-image: url('../images/Rectangle\ 14.svg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.btn-ordena {
+    height: 35px;    
+    background-color: #F9C06A;
+    color: #060606;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 3% 8% 0 ; 
+}
+
+.oportunidad {
+    color: #fff; 
+    font-size: 35px;
+    padding: 80px 80px 10px;
+}
     
+.vida {
+    max-width: 300px;
+    overflow-wrap: break-word;
+    color: #fff; 
+    font-size: 20px;
+    padding: 0 80px ;
+
+}
+
+.img-contain {
+    width: 15%;
+    position: absolute;
+    top: 50%; 
+    right: 65px; 
+    transform: translateY(-50%);
+}
