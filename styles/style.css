@@ -219,11 +219,14 @@ h4 {
   padding: 2px;
 }
 .container-2 {
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: auto;
-  gap: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  max-width: 100%;
+}
+
+.extra {
+  width: 249.67px;
 }
 .granos {
   background-color: #f3d6ab;
@@ -252,11 +255,119 @@ h4 {
 
 /**************************************************/
 .cafe {
-    position: relative;
+  position: relative;
 }
 
-.div-cafe h2 ,
-.div-cafe p  {
+.BackgroundImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(232, 183, 128, 0.5);
+}
+
+.div-cafe {
+  text-align: left;
+  z-index: 1;
+}
+
+.BackgroundImage {
+  background-image: url("../images/Rectangle\ 14.svg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.btn-ordena {
+  height: 35px;
+  background-color: #f9c06a;
+  color: #060606;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 3% 8% 0;
+}
+
+.oportunidad {
+  color: #fff;
+  font-size: 35px;
+  padding: 80px 80px 10px;
+}
+
+.vida {
+  max-width: 300px;
+  overflow-wrap: break-word;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 80px;
+}
+
+.img-contain {
+  width: 15%;
+  position: absolute;
+  top: 50%;
+  right: 65px;
+  transform: translateY(-50%);
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-color: #f9f9f9;
+}
+
+.perfection {
+  color: #603809;
+  font-size: 50px;
+}
+
+.clientes-comen {
+  font-size: 24px;
+  color: #707070;
+  margin: 0 0 30px 0;
+}
+
+.comen-div {
+  text-align: center;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.comen-parrafo {
+  background-color: #fcefdc;
+  border: #f3ab3e solid 2px;
+  width: 800px;
+  height: 350px;
+  color: #707070;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  margin: 0 20px 0 20px;
+  padding: 0 40px 0 40px;
+}
+
+.btn-comen {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/**************************************************/
+.cafe {
+  position: relative;
+}
+
+.div-cafe h2,
+.div-cafe p {
   position: relative;
   z-index: 1;
 }
@@ -267,60 +378,59 @@ h4 {
 }
 
 .BackgroundImage::before {
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background-color:rgba(232, 183, 128, 0.5); 
-    z-index: 0;
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(232, 183, 128, 0.5);
+  z-index: 0;
+}
 
 .div-cafe {
-    text-align: left;
-    z-index: 1;
+  text-align: left;
+  z-index: 1;
 }
 
 .BackgroundImage {
-    background-image: url('../images/Rectangle\ 14.svg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
+  background-image: url("../images/Rectangle\ 14.svg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 
 .btn-ordena {
-    height: 35px;    
-    background-color: #F9C06A;
-    color: #060606;
-    border: none; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    margin: 3% 8% 0 ; 
+  height: 35px;
+  background-color: #f9c06a;
+  color: #060606;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 3% 8% 0;
 }
 
 .oportunidad {
-    color: #fff; 
-    font-size: 35px;
-    padding: 80px 80px 10px;
+  color: #fff;
+  font-size: 35px;
+  padding: 80px 80px 10px;
 }
-    
-.vida {
-    max-width: 300px;
-    overflow-wrap: break-word;
-    color: #fff; 
-    font-size: 20px;
-    padding: 0 80px ;
 
+.vida {
+  max-width: 300px;
+  overflow-wrap: break-word;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 80px;
 }
 
 .img-contain {
-    width: 15%;
-    position: absolute;
-    top: 50%; 
-    right: 65px; 
-    transform: translateY(-50%);
+  width: 15%;
+  position: absolute;
+  top: 50%;
+  right: 65px;
+  transform: translateY(-50%);
 }
 
 .comentarios {
@@ -421,19 +531,19 @@ h4 {
   padding-block: 32px;
   background-color: #603709be;
   & h1 {
-      font-size: 54px;
-      margin: 0;
+    font-size: 54px;
+    margin: 0;
   }
   & h4 {
-      font-size: 20px;
+    font-size: 20px;
   }
   & .form {
-      border-radius: 8px;
-      overflow: hidden;
+    border-radius: 8px;
+    overflow: hidden;
   }
   & input {
-      padding: 12px;
-      border: 0;
+    padding: 12px;
+    border: 0;
   }
 }
 
@@ -473,11 +583,10 @@ h4 {
   object-fit: cover;
 }
 
-
 button {
   border: 0;
   color: #795f39;
-  background-color: #F9C06A;
+  background-color: #f9c06a;
   padding: 12px;
   font-size: 14px;
   font-weight: 700;
@@ -526,24 +635,96 @@ footer {
   height: auto;
 }
 
+.about-us {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
 .about-img {
   max-width: 50%;
   height: auto;
 }
-
-.about-us{
-  display: flex;
-  justify-content: space-around;
-}
-
 .about-parrafo {
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 20px;
 }
 
-.nosotros-chef{
-  background-color: #060606;
-  height: 500px;
+.container-us {
+  margin-top: 50px;
+}
+
+.cocinero-container {
+  border: 2px solid orange;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-chefs {
+  width: 400px;
+  height: auto;
+}
+
+.logo-chef {
+  width: 25px;
+  height: auto;
+}
+
+.a-chefs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.graph-chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-chefs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.estrella-chef {
+  width: 100px;
+}
+
+.img-chefs-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.h2-chefs{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.p-cocineros>p{
+  text-align: center;
+ 
 }
 
 /*contactanos*************************************************************/
@@ -608,9 +789,9 @@ textarea::placeholder {
   color: #000;
   text-transform: capitalize;
   padding: 10px;
-  background: #F9C06A;
+  background: #f9c06a;
   border-width: 1px;
-  border: 0.800px solid rgba(65, 65, 65, 0.2);
+  border: 0.8px solid rgba(65, 65, 65, 0.2);
   cursor: pointer;
   transition: 0.3s, color 0.3s;
 }
@@ -653,14 +834,14 @@ textarea::placeholder {
 }
 
 .phone-card:hover {
-  background-color: #F9C06A;
+  background-color: #f9c06a;
   color: #ffffff;
 }
 
 .phone-card i {
   margin-top: 4rem;
   font-size: 30px;
-  background-color: #F9C06A;
+  background-color: #f9c06a;
   border-radius: 50%;
   padding: 15px;
 }
@@ -735,7 +916,6 @@ textarea::placeholder {
 }
 /*************MAPAAAAAAAAAAAAAAAAAAAAAAAAAAA*******************************/
 .map {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -748,14 +928,13 @@ textarea::placeholder {
   color: #603809;
 }
 
-
 /*GALERIA********************************************************/
 .img-galeria {
   position: relative;
   display: block;
 }
 
-.img-galeria img{
+.img-galeria img {
   width: 100%;
   margin-top: 10px;
 }
@@ -774,7 +953,7 @@ textarea::placeholder {
 }
 
 .categorias {
-  background:#f9f9f9;
+  background: #f9f9f9;
   width: 100%;
   text-align: center;
 }
@@ -821,7 +1000,7 @@ textarea::placeholder {
   color: #603809;
 }
 
-.p-galery{
+.p-galery {
   font-size: 30px;
   color: #603809;
 }
