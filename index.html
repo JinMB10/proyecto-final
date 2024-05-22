@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <section class="main-container">
     <div class="container-1">
       <nav class="nav-container">
@@ -22,19 +24,19 @@
         <div>
           <ul>
             <li>
-              <a href="">Inicio</a>
+              <a href="./index.html">Inicio</a>
               </a>
             </li>
             <li>
-              <a href="">Menú</a>
+              <a href="./galeria.html">Menú</a>
               </a>
             </li>
             <li>
-              <a href="">Nosotros</a>
+              <a href="./nosotros.html">Nosotros</a>
               </a>
             </li>
             <li>
-              <a href="">Contáctanos</a>
+              <a href="./contactanos.html">Contáctanos</a>
               </a>
             </li>
           </ul>
@@ -176,6 +178,8 @@
   <section class="comentarios">
     <h2 class="perfection">Nuestros comentarios sobre la perfección del cafe</h2>
     <h5 class="clientes-comen">Nuestros clientes tienen cosas increibles que decir de nosotros</h5>
+    <span class="span-comen1"><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="span-comen2"><i class="fa-solid fa-arrow-right"></i></span>
     <div class="comen-div">
       <p class="comen-parrafo">
         Descubre nuestra selección cuidadosamente curada de granos de café de origen único, tostados a la perfección
@@ -190,81 +194,87 @@
   </section>
 
   <br><br>
-  <section class="footer-container">
-
-    <div class="containersiu cafesote">
-      <h3 class="h33">Suscríbase para obtener las últimas noticias</h3>
-      <h4 class="h33">No te pierdas nuestras últimas noticias, actualizaciones, consejos y ofertas especiales.</h4>
-      <input type="enter your mail">
-      <button>suscribete </button>
-
-      <br>
-      <br>
-      <img alt="imagen1" src="./images/Rectangle 14.png" class="cafesito">
+  <section class="newsletter">
+    <img alt="imagen1" src="./images/Rectangle 14.png" class="cafesito">
+    <div class="container cafesote">
+        <h1 class="fotter-title">Suscríbase para obtener las últimas noticias</h1>
+        <h4 class="fotter-subtitle">No te pierdas nuestras últimas noticias, actualizaciones, consejos y ofertas especiales.</h4>
+        <form class="form d-flex">
+            <input type="email" placeholder="Enter your email">
+            <button>Suscribete</button>
     </div>
-    <div class="maicol">
-      <img src="./images/fotter_image.png" alt="fondo de granos" class="img-bg">
-      <div class="grid">
-        <div>
-          <h3>Bean Scene</h3>
-          <h4>Lorem Ipsum es simplemente un texto de relleno de la industria de
-            la impresión y la tipografía.Lorem
-            Ipsum ha sido el texto de relleno estándar de la industria
-            desde el siglo XVI , cuando un impresor desconocido tomó una
-            galería de tipos y los mezcló para hacer un libro
-            de muestras tipográficas.</h4>
-        </div>
-        <div>
-          <h3>Nosotros</h3>
-          <h4>Menu
-            <br>
-            <br>
-            Características
-            <br>
-            <br>
-            Noticias y blogs
-            <br>
-            <br>
-            Servicio de asistencia
-            <br>
-          </h4>
-        </div>
-        <div>
-          <h3>Compañía</h3>
-          <h4>Cómo trabajamos
-            <br>
-            <br>
-            Términos de servicio
-            <br>
-            <br>
-            Precios
-            <br>
-            <br>
-            Preguntas frecuentes
-            <br>
-            <br>
-          </h4>
-        </div>
-        <div>
-          <h3>Contáctanos</h3>
-          <h4>AV. lA Cultura 701 interior Pasaje Giraldez Nro: 2972
-            <br>
-            <br>
-            +51933068257
-            <br>
-            <br>
-            michelespeov@mail.com
-            <br>
-            <br>
-            www.beanscene.com
-            <br>
-            <br>
-          </h4>
-        </div>
-      </div>
     </div>
+    <img src="./images/pngwing 1.png" alt="" class="cafe-1">
+    <img src="./images/pngwing 2.png" alt="" class="cafe-2">
   </section>
 
-</body>
+<footer>
+    <div class="container-4">
+        <div class="maicol">
+            <img src="./images/fotter_image.png" alt="fondo de granos" class="img-bg">
+            <div class="grid">
+                <div>
+                    <h3>Bean Scene</h3>
+                    <h4>Lorem Ipsum es simplemente un texto de relleno de la industria de
+                        la impresión y la tipografía.Lorem
+                        Ipsum ha sido el texto de relleno estándar de la industria
+                        desde el siglo XVI , cuando un impresor desconocido tomó una
+                        galería de tipos y los mezcló para hacer un libro
+                        de muestras tipográficas.</h4>
+                </div>
+                <div>
+                    <h3>Nosotros</h3>
+                    <h4>Menu
+                        <br>
+                        <br>
+                        Características
+                        <br>
+                        <br>
+                        Noticias y blogs
+                        <br>
+                        <br>
+                        Servicio de asistencia
+                        <br>
+                    </h4>
+                </div>
+                <div>
+                    <h3>Compañía</h3>
+                    <h4>Cómo trabajamos
+                        <br>
+                        <br>
+                        Términos de servicio
+                        <br>
+                        <br>
+                        Precios
+                        <br>
+                        <br>
+                        Preguntas frecuentes
+                        <br>
+                        <br>
+                    </h4>
+                </div>
+                <div>
+                    <h3>Contáctanos</h3>
+                    <h4>AV. lA Cultura 701 interior Pasaje Giraldez Nro: 2972
+                        <br>
+                        <br>
+                        +51933068257
+                        <br>
+                        <br>
+                        michelespeov@mail.com
+                        <br>
+                        <br>
+                        www.beanscene.com
+                        <br>
+                        <br>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/4250892b33.js" crossorigin="anonymous"></script>
 </html>
