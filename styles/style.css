@@ -519,17 +519,17 @@ h4 {
 }
 
 .fotter-title {
-  color: white;
+  color: #603809;
 }
 
 .fotter-subtitle {
-  color: #d9d5d5;
+  color: #636262;
 }
 
 .newsletter {
   position: relative;
   padding-block: 32px;
-  background-color: #603709be;
+
   & h1 {
     font-size: 54px;
     margin: 0;
@@ -803,7 +803,7 @@ textarea::placeholder {
 
 .contacte {
   color: #603809;
-  height: 100px;
+  height: 70px;
   width: 100%;
   text-align: center;
   font: 700 2rem monospace;
@@ -811,61 +811,7 @@ textarea::placeholder {
 
 .contact-servise {
   background-color: #f9f9f9;
-  height: 95rem;
-}
-
-.electrony-grid {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-.phone-card {
-  background-color: #f3d6ab;
-  color: blanchedalmond;
-  width: 500px;
-  height: 30rem;
-  transition: 0.3s, color 0.3s;
-}
-
-.redes-h3 {
-  font-size: 30px;
-}
-
-.phone-card:hover {
-  background-color: #f9c06a;
-  color: #ffffff;
-}
-
-.phone-card i {
-  margin-top: 4rem;
-  font-size: 30px;
-  background-color: #f9c06a;
-  border-radius: 50%;
-  padding: 15px;
-}
-
-.phone-card a,
-.phone-card span {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #603809;
-  text-decoration: none;
-}
-
-.phone-card a:hover,
-.phone-card span:hover {
-  color: #ffffff;
-}
-
-.phone-card span {
-  font-size: 1.3rem;
-}
-
-.red-social {
-  display: flex;
-  justify-content: center;
+  height: 950px;
 }
 
 .servis {
