@@ -19,36 +19,36 @@ body {
   align-items: center;
 }
 
-.nav-container > div:nth-child(1) {
+.nav-container>div:nth-child(1) {
   color: #ffffff;
   font-family: "Clicker Script";
   font-size: 35px;
   margin-left: 70px;
 }
 
-.nav-container > div > ul {
+.nav-container>div>ul {
   list-style: none;
   display: flex;
   gap: 80px;
 }
 
-.nav-container > div > ul > li > a {
+.nav-container>div>ul>li>a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.nav-container > div:last-child {
+/* .nav-container>div:last-child {
   display: flex;
   gap: 60px;
   margin-right: 70px;
-}
+} */
 
-.nav-container > div:last-child > a {
+.nav-container>div:last-child>a {
   color: #ffffff;
   margin-top: 10px;
 }
 
-.nav-container > div:last-child > button {
+.nav-container>div:last-child>button {
   border-radius: 24px;
   padding: 10px;
   background-color: #f9c06a;
@@ -66,14 +66,14 @@ body {
   flex-direction: column;
 }
 
-.text-container > h1 {
+.text-container>h1 {
   font-family: "Clicker Script";
   font-size: 200px;
   font-weight: 5;
   margin: 0;
 }
 
-.button > button {
+.button>button {
   border-radius: 24px;
   margin-top: 10px;
   padding: 10px;
@@ -81,7 +81,135 @@ body {
   font-weight: bold;
 }
 
+
+
+/*********************************/
+
+.menu_icon svg{
+  width: 45px;
+  display: none;
+}
+
+.logo_scene p{
+  color: white;
+}
+
 /**************************/
+
+/* MODAL PARA REGISTRO */
+
+/********************************/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: rgba(255,255,255,0.9);
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.modal-content h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content input, button {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal-content input {
+  background-color: rgba(240,240,240,0.5);
+  transition: background-color 0.3s ease;
+}
+
+.modal-content input:focus {
+  background-color: rgba(220,220,220,0.7);
+  outline: none;
+}
+
+.modal-content button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+
+#loginModal .modal-content {
+  max-width: 350px; /* Podemos hacerlo un poco más pequeño que el de registro */
+}
+
+#loginForm input {
+  margin-bottom: 15px; /* Un poco más de espacio entre los campos */
+}
+
+.error-message {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: none;
+}
+
+.success-message {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  color: #008000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: none;
+}
+
+/********************************/
+
+
 
 .sect-coffe {
   background-color: #f9f9f9;
@@ -147,6 +275,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
 }
+
 .h4-sub {
   text-align: center;
   color: #707070;
@@ -165,16 +294,19 @@ body {
   border: #f2dab6;
   height: 350px;
 }
+
 .chai-latte {
   background-color: #f5e9d6;
   border: #f9c06a;
   height: 350px;
 }
+
 .macchiato {
   background-color: #f5e9d6;
   border: #f9c06a;
   height: 350px;
 }
+
 .expreso {
   background-color: #f3d6ab;
   border: #f9c06a;
@@ -189,6 +321,7 @@ h3 {
   text-align: center;
   font-size: #603809;
 }
+
 .card__img {
   width: 100%;
   height: 192px;
@@ -218,6 +351,7 @@ h4 {
 .h4-sub {
   padding: 2px;
 }
+
 .container-2 {
   display: flex;
   justify-content: center;
@@ -228,22 +362,27 @@ h4 {
 .extra {
   width: 249.67px;
 }
+
 .granos {
   background-color: #f3d6ab;
   border: #f9c06a;
 }
+
 .calid {
   background-color: #fcf1e1;
   border: #f9c06a;
 }
+
 .extra {
   background-color: #fcf1e1;
   border: #f9c06a;
 }
+
 .precio {
   background-color: #fcf1e1;
   border: #f9c06a;
 }
+
 .btn_4 {
   height: 40px;
   border-radius: 10px;
@@ -536,19 +675,29 @@ h4 {
     font-size: 54px;
     margin: 0;
   }
+
   & h4 {
     font-size: 20px;
   }
+
   & .form {
     border-radius: 8px;
     overflow: hidden;
   }
+
   & input {
     width: 250px;
     cursor: pointer;
     padding: 12px;
     border: 0;
   }
+}
+
+.btn-footer {
+  background-color: #f9c06a;
+  width: 140px;
+  border: none;
+
 }
 
 .cafesote {
@@ -667,6 +816,7 @@ footer {
   justify-content: center;
   flex-direction: column;
 }
+
 .img-chefs {
   width: 400px;
   height: auto;
@@ -682,12 +832,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .graph-chef {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .first-container {
   display: flex;
   justify-content: center;
@@ -712,14 +864,14 @@ footer {
   border-radius: 50%;
 }
 
-.h2-chefs{
+.h2-chefs {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-.p-cocineros>p{
+.p-cocineros>p {
   text-align: center;
- 
+
 }
 
 /*contactanos*************************************************************/
@@ -860,6 +1012,7 @@ textarea::placeholder {
 .servis-tecnico a:hover {
   color: #000;
 }
+
 /*************MAPAAAAAAAAAAAAAAAAAAAAAAAAAAA*******************************/
 .map {
   display: flex;
@@ -943,21 +1096,39 @@ textarea::placeholder {
     padding: 0 20px;
   }
 
-  .nav-container > div:nth-child(1) {
+  .nav-container>div:nth-child(1) {
     margin-left: 20px;
   }
 
-  .nav-container > div:last-child {
+  .nav-container>div:last-child {
     margin-right: 20px;
   }
 
-  .text-container > h1 {
+  .text-container{
+    margin-top: 120px;
+  }
+
+  .text-container .text-container-frases{
+    line-height: 10px;
+  }
+
+  .text-container>h1 {
     font-size: 150px;
   }
 }
 
 /* Media Query para pantallas de hasta 768px */
 @media (max-width: 768px) {
+
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .nav-container {
+    justify-content: space-evenly;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -974,16 +1145,37 @@ textarea::placeholder {
     width: 100%;
   }
 
-  .menu-icon {
-    opacity: 1;
-    color: #fff;
-    z-index: 1;
+  .menu_icon svg {
+    position: relative;
+    display: block;
+  }
+
+  .menu_options{
+    position: absolute;
+    left: 55px;
+    top: 40px;
   }
 
   .menu.active {
     display: flex;
   }
-/**/
+
+  .menu_options{
+    display: none;
+  }
+
+  .menu_options.active {
+    display: block; /* Muestra las opciones del menú cuando tiene la clase 'active' */
+  }
+
+  .menu_options ul{
+    font-weight: 900;
+  }
+
+  .main-container{
+    height: 540px;
+  }
+
   .container-1 {
     width: 100%;
     padding: 0;
@@ -993,31 +1185,26 @@ textarea::placeholder {
     width: 90%;
   }
 
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-container > div:nth-child(1) {
+  .nav-container>div:nth-child(1) {
     margin-left: 0;
     font-size: 30px;
     color: #fff;
   }
 
-  .nav-container > div > ul {
+  .nav-container>div>ul {
     flex-direction: column;
     gap: 20px;
     margin-top: 10px;
   }
 
-  .nav-container > div:last-child {
+  .nav-container>div:last-child {
     flex-direction: column;
     margin-right: 0;
     gap: 20px;
   }
 
-  .text-container > h1 {
-    font-size: 100px;
+  .text-container>h1 {
+    font-size: 90px;
   }
 
   .container-01 {
@@ -1035,7 +1222,7 @@ textarea::placeholder {
 
   .h2-disfruta {
     margin: 0;
-}
+  }
 
   .container {
     flex-wrap: wrap;
@@ -1052,17 +1239,17 @@ textarea::placeholder {
   }
 
   .perfection {
-      font-size: 35px;
+    font-size: 35px;
   }
 
   .span-comen1 {
-      left: 2%;
-      top: 60%;
+    left: 2%;
+    top: 60%;
   }
 
   .span-comen2 {
-      left: 92%;
-      top: 60%;
+    left: 92%;
+    top: 60%;
   }
 
   .comen-parrafo {
@@ -1071,13 +1258,124 @@ textarea::placeholder {
     padding: 0 20px 0 20px;
   }
 
+  .btn-ordena {
+    margin: 4% 11% 0;
+  }
+
   .newsletter {
-      margin-top: -50px;
+    margin-top: -50px;
 
     & h1 {
-      font-size: 40px;
+      font-size: 35px;
+      margin: 0;
+    }
+
+    & h4 {
       margin: 0;
     }
   }
-  
+
+  .cafe-1,
+  .cafe-2 {
+    width: 100px;
+  }
+
+  .container-4 {
+    max-width: 768px;
+    margin-inline: auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .maicol h4 {
+    font-size: 15PX;
+  }
+
+  /*NOSOTROS*/
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-img {
+    max-width: 30%;
+    height: auto;
+    margin-left: 38%;
+  }
+
+  .about-parrafo {
+    width: 600px;
+    margin-left: 8%;
+    font-size: 17px;
+  }
+
+  .container-chefs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /*contactanos*************************************************************/
+
+
+  .formulary {
+    margin-left: 180px;
+  }
+
+  .contact-servise {
+    background-color: #f9f9f9;
+    height: 700px;
+  }
+
+  .servis-tecnico {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .servis-red {
+    height: 200px;
+    width: 200px;
+    margin: 16px;
+  }
+
+
+  .servis-tecnico i,
+  .red-social a,
+  .servis-tecnico a {
+    font-size: 18px;
+  }
+
+  .servis-tecnico i {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .map a {
+    font-size: 1.5rem;
+  }
+
+  /*GALERIA********************************************************/
+  .contenedor-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  } 
+
+  .cartas {
+    flex: 1 1 30%; 
+    box-sizing: border-box;
+  }
+
 }
