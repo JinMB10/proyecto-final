@@ -21,11 +21,18 @@ html {
 .container nav {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  padding: 15px;
+  justify-content: space-between;
+  padding: 30px;
   background-color: #fff;
   margin-bottom: 30px;
   color: #333;
+}
+
+.cart_beans{
+  font-family: "Clicker Script";
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .nav-card {
@@ -48,6 +55,17 @@ html {
   position: absolute;
   right: 0;
   background-color: #ffff;
+}
+
+.success-message {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  color: #008000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: none;
 }
 
 .container nav i:hover .nav-card {

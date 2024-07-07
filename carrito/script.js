@@ -88,6 +88,20 @@ function carritoHTML() {
   });
 }
 
+document.getElementById("pagar_cart").onclick = function(e) {
+  e.preventDefault();
+  
+  // Mostrar el mensaje de error
+  document.getElementById("buySucces").style.display = "block";
+  
+  // Ocultar el mensaje de error después de 3 segundos
+  setTimeout(() => {
+    document.getElementById("buySucces").style.display = "none";
+  }, 3000);
+
+}
+
+
 //Eliminar los cursos de la lista_de_cursos
 function limpiarHTML() {
   while (contenedorCarrito.firstChild) {

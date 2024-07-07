@@ -91,8 +91,12 @@ body {
   display: none;
 }
 
-.logo_scene p{
+.cart_beans{
+  font-family: "Clicker Script";
+  text-decoration: none;
   color: white;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 /**************************/
@@ -277,6 +281,16 @@ form {
   margin: auto;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.btn_3 a{
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-ordena a{
+  text-decoration: none;
+  color: #000;
 }
 
 .h4-sub {
@@ -480,6 +494,7 @@ h4 {
   text-align: center;
   padding: 0 5px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .comen-parrafo {
@@ -609,8 +624,8 @@ h4 {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  left: 25%;
-  top: 62%;
+  left: 0%;
+  top: 45%;
 }
 
 .span-comen1 i {
@@ -625,8 +640,8 @@ h4 {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  left: 72%;
-  top: 62%;
+  right: 0%;
+  top: 45%;
   cursor: pointer;
 }
 
@@ -900,7 +915,7 @@ footer {
   width: 400px;
   height: 450px;
   padding: 15px;
-  margin-left: 60rem;
+  margin-left: 50%;
   border-radius: 20px;
 }
 
@@ -1140,14 +1155,6 @@ textarea::placeholder {
     font-size: 150px;
   }
 
-  .span-comen1 {
-    left: 11%;
-  }
-
-  .span-comen2 {
-    left: 85%;
-  }
-
   .span-comen2 i {
     font-size: 25px;
     padding: 12px;
@@ -1292,16 +1299,6 @@ textarea::placeholder {
 
   .perfection {
     font-size: 35px;
-  }
-
-  .span-comen1 {
-    left: 2%;
-    top: 60%;
-  }
-
-  .span-comen2 {
-    left: 92%;
-    top: 60%;
   }
 
   .comen-parrafo {

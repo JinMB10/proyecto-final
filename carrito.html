@@ -11,8 +11,10 @@
 </head>
 
 <body>
+
     <div class="container">
         <nav id="carrito">
+                <a class="cart_beans" href="./index.html" rel="">BEANS SCENE</a>
             <i class="fa-solid fa-cart-shopping">
                 <div class="buy-card">
                     <ul class="nav-card">
@@ -20,16 +22,18 @@
                         <li>Nombre</li>
                         <li>Precio</li>
                         <li>Cantidad</li>
-                        <li></li>
                     </ul>
-                    <div class="lista_de_cafes">
-                     
+                    <div id="buySucces" class="success-message" style="display: none;">
+                        Pago exitoso !!!
                     </div>
+                    <div class="lista_de_cafes"></div>
+                    <button id="pagar_cart">PAGAR</button>
                     <button id="vaciar_carrito">VACIAR CARRITO</button>
                 </div>
             </i>
         </nav>
-        <h1 class="h1">CAFE´S</h1>
+
+        <h1 class="h1">SABORES</h1>
         <div class="grid" id="lista-cafes">
             <div class="items">
                 <img src="https://pequenosgrandesaciertos.ufesa.es/wp-content/uploads/2016/10/como-hacer-cafe-capuchino.jpg"
