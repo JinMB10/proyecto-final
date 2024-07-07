@@ -902,6 +902,7 @@ footer {
 /*contactanos*************************************************************/
 .container_form {
   width: 100%;
+  height: 820px;
   background-image: url("https://brewsouth.com/media/athlete2/default/header-contact-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -938,7 +939,6 @@ footer {
   border: 1px solid rgba(243, 238, 238, 0.2);
   background-color: #eaf1f5;
   box-sizing: border-box;
-  color: white;
   cursor: pointer;
   gap: 5rem;
   display: block;

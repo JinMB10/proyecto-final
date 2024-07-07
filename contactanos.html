@@ -81,19 +81,22 @@
             <div class="container_form">
                 <div class="formulary">
                     <h2 class="message-text">ENVIAR CONSULTAS EN LÍNEA</h2>
-                    <form action="/wp-content/plugins/lanthy-message/updata.php" method="post">
+                    <form id="form-send">
+                        <div id="formSucces" class="success-message" style="display: none;">
+                            Datos enviados.
+                        </div>
                         <input type="text" name="name" placeholder="Tu nombre *" required="required">
                         <input type="email" name="email" placeholder="Tu correo electrónico *" required="required">
                         <input type="text" name="application" placeholder="TU MÓVIL / WHATSAPP / SKYPE *"
                             required="required">
                         <textarea name="message" rows="6"
                             placeholder="Tu mensaje * ENVÍE SU INTENSIÓN DE COMPRA O SIMPLEMENTE PÍDENOS CUALQUIER INFORMACIÓN"
-                            required="required"></textarea>
+                            required="required">
+                        </textarea>
                         <input type="text" name="product" placeholder="TU FACEBOOK (OPCIONAL)">
                         <input type="hidden" name="post" value="true">
-                        <div class="btn-form">
-                            <button type="submit" class="btn btn-primary"> enviar </button>
-                        </div>
+                        <button type="submit" class="btn btn-primary"> Enviar
+                        </button>
                     </form>
                 </div>
             </div>
