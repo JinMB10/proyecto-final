@@ -79,6 +79,7 @@ body {
   padding: 10px;
   background-color: #f9c06a;
   font-weight: bold;
+  cursor: pointer;
 }
 
 
@@ -656,6 +657,9 @@ h4 {
   cursor: pointer;
 }
 
+.button>button>a{
+  text-decoration:none;
+}
 /*ESTILOS DE FOOTER*/
 .cafesin {
   color: white;
