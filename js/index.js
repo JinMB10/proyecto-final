@@ -93,7 +93,7 @@ document.getElementById("loginForm").onsubmit = function(e) {
   }, 3000);
   
   // No cerramos el modal para que se pueda ver el mensaje de error
-  console.log("Simulación de login fallido");
+  console.log("Estas registrado");
 }
 
 

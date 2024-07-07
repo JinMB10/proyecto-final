@@ -5,7 +5,7 @@ body {
 .main-container {
   background-image: url(/images/coffee_image.svg);
   background-size: cover;
-  height: 768px;
+  height: 850px;
 }
 
 .container-1 {
@@ -166,14 +166,14 @@ form {
 }
 
 .modal-content button {
-  background-color: #4CAF50;
+  background-color: #f9c06a;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .modal-content button:hover {
-  background-color: #45a049;
+  background-color: #f9c06a;
 }
 
 
@@ -231,7 +231,7 @@ form {
 }
 
 .btn {
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
   background-color: #f9c06a;
   border: none;
@@ -239,6 +239,7 @@ form {
   font-weight: bold;
   text-align: center;
   transition: background-color 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -274,6 +275,7 @@ form {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .h4-sub {
@@ -390,6 +392,7 @@ h4 {
   background-color: #f9c06a;
   color: #1e1e1e;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /**************************************************/
@@ -697,6 +700,7 @@ h4 {
   background-color: #f9c06a;
   width: 140px;
   border: none;
+  cursor: pointer;
 
 }
 
@@ -766,8 +770,10 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+.maicol h3 {
+  font-size: 25px;
+}
 
-.maicol h3,
 .maicol h4 {
   color: white;
 }
@@ -876,10 +882,10 @@ footer {
 
 /*contactanos*************************************************************/
 .container_form {
+  width: 100%;
   background-image: url("https://brewsouth.com/media/athlete2/default/header-contact-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -888,9 +894,9 @@ footer {
 .formulary {
   background-color: rgba(0, 0, 0, 0.6);
   width: 400px;
-  height: 420px;
+  height: 450px;
   padding: 15px;
-  margin-left: 83rem;
+  margin-left: 60rem;
   border-radius: 20px;
 }
 
@@ -1088,9 +1094,23 @@ textarea::placeholder {
   color: #603809;
 }
 
-
 /* Media Query para pantallas de hasta 1200px */
+@media (max-width: 1400px){
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+
 @media (max-width: 1200px) {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .container-1 {
     width: 80%;
     padding: 0 20px;
@@ -1115,6 +1135,32 @@ textarea::placeholder {
   .text-container>h1 {
     font-size: 150px;
   }
+
+  .span-comen1 {
+    left: 11%;
+  }
+
+  .span-comen2 {
+    left: 85%;
+  }
+
+  .span-comen2 i {
+    font-size: 25px;
+    padding: 12px;
+  }
+
+  .container-chefs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+
+  .formulary {
+    margin-left: 250px;
+    margin-bottom: 40px;
+  }
+
 }
 
 /* Media Query para pantallas de hasta 768px */
@@ -1152,8 +1198,8 @@ textarea::placeholder {
 
   .menu_options{
     position: absolute;
-    left: 55px;
-    top: 40px;
+    left: 45px;
+    top: 65px;
   }
 
   .menu.active {
@@ -1166,6 +1212,8 @@ textarea::placeholder {
 
   .menu_options.active {
     display: block; /* Muestra las opciones del menú cuando tiene la clase 'active' */
+    background-color: #603809ba;
+    border-radius: 10px;
   }
 
   .menu_options ul{
@@ -1287,11 +1335,15 @@ textarea::placeholder {
 
   .grid {
     grid-template-columns: 1fr;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
   }
 
   .maicol h4 {
-    font-size: 15PX;
+    font-size: 18PX;
+  }
+
+  .text-footer {
+    display: none;
   }
 
   /*NOSOTROS*/
@@ -1321,6 +1373,12 @@ textarea::placeholder {
 
   /*contactanos*************************************************************/
 
+  .container_form {
+    height: 540px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
 
   .formulary {
     margin-left: 180px;
