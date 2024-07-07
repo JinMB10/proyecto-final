@@ -79,6 +79,7 @@ body {
   padding: 10px;
   background-color: #f9c06a;
   font-weight: bold;
+  cursor: pointer;
 }
 
 
@@ -239,6 +240,7 @@ form {
   font-weight: bold;
   text-align: center;
   transition: background-color 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -274,6 +276,7 @@ form {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  cursor:pointer;
 }
 
 .h4-sub {
@@ -653,6 +656,9 @@ h4 {
   cursor: pointer;
 }
 
+.button>button>a{
+  text-decoration:none;
+}
 /*ESTILOS DE FOOTER*/
 .cafesin {
   color: white;
@@ -697,6 +703,7 @@ h4 {
   background-color: #f9c06a;
   width: 140px;
   border: none;
+  cursor: pointer;
 
 }
 
