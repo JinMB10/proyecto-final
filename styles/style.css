@@ -3,7 +3,7 @@ body {
 }
 
 .main-container {
-  background-image: url(/images/coffee_image.svg);
+  background-image: url("https://i.postimg.cc/vBvDGmkL/coffee-image.jpg");
   background-size: cover;
   height: 850px;
 }
