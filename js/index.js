@@ -15,12 +15,6 @@ document.querySelector('.btn').innerHTML = "Aprende más";
 
 document.querySelector('.sub-title').innerHTML = "Descubre el mejor café";
 
-const img = document.createElement('img');
-img.src = '../images/Mask_group-removebg-preview.png';
-
-const container = document.getElementById('my-container');
-container.appendChild(img);
-
 const boton = document.querySelector('.btn');
 
 boton.addEventListener('click', function() {
