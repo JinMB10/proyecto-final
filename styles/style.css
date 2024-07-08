@@ -1349,9 +1349,13 @@ textarea::placeholder {
   }
 
   .about-parrafo {
-    width: 600px;
+    width: 400px;
     margin-left: 8%;
-    font-size: 17px;
+    font-size: 16px;
+  }
+
+  .cocinero-container {
+    width: 350px;
   }
 
   .container-chefs {
@@ -1497,7 +1501,7 @@ textarea::placeholder {
 
   .h2-galery {
     font-size: 30px;
-}
+  }
 
   .cartas img {
     height: 180px;
@@ -1517,8 +1521,8 @@ textarea::placeholder {
   }
 
   .about-parrafo {
-    width: 400px;
-    margin-left: 8%;
+    width: 300px;
+    margin-left: 0%;
     font-size: 15px;
   }
 
