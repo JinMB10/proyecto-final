@@ -37,12 +37,6 @@ body {
   color: #ffffff;
 }
 
-/* .nav-container>div:last-child {
-  display: flex;
-  gap: 60px;
-  margin-right: 70px;
-} */
-
 .nav-container>div:last-child>a {
   color: #ffffff;
   margin-top: 10px;
@@ -800,7 +794,7 @@ footer {
 
 /*ESTILOS PARA NOSOTROS*/
 .main-container-nosotros {
-  background-image: url(/images/coffee_image.svg);
+  background-image: url("https://i.postimg.cc/vBvDGmkL/coffee-image.jpg");
   background-size: cover;
   height: auto;
 }
@@ -1379,7 +1373,7 @@ textarea::placeholder {
 
   .contact-servise {
     background-color: #f9f9f9;
-    height: 700px;
+    height: auto;
   }
 
   .servis-tecnico {
@@ -1534,36 +1528,36 @@ textarea::placeholder {
   }
   /*contactanos*/
   .contact-servise {
-    height: 500px;
-    width: 90%;
+    height: auto;
+    width: 80%;
     padding: 0 0 0 7%;
+    margin-bottom: 150px;
   }
 
   .formulary {
     margin-left: 100px;
     height: 420px;
-}
+  }
 
   .contacte {
   font: 700 1.5rem monospace;
   }
-  .servis-tecnico {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
+  /* .servis-tecnico {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+    height: 130px;
+    width: 50px;
+  } */
+
+  .servis-red {
+    height: 150px;
+    width: 120px;
   }
 
   .servis {
     font: 800 1.5rem monospace;
-  }
-
-  .servis-tecnico {
-    height: 150px;
-    width: 50px;
-  }
-  .servis-red {
-    height: 150px;
-    width: 120px;
   }
 
   .redes-h3{
